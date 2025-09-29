@@ -1,2 +1,1 @@
-# Train-Accident-Prevention-System
-A Train Accident Prevention System uses IoT sensors, GPS, and communication modules to monitor track conditions, train speed, and obstacles in real time. Data is sent to a central control unit for alerts and automatic braking, ensuring passenger safety and reducing collision risks.
+This system prevents train accidents using IoT sensors, GPS, and communication modules. It monitors track conditions, speed, and obstacles in real time. Alerts and automatic braking ensure safe operation, reducing risks of collisions and derailments.
