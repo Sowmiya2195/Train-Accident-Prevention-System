@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main() {
+    float speed;          // train speed (km/h)
+    float obstacleDist;   // obstacle distance (meters, -1 = none)
+    int trackOk;          // 1 = OK, 0 = Fault
+    printf("=== Train Accident Prevention System ===\n");
+    // Input values (in real system, these come from sensors)
+    printf("Enter train speed (km/h): ");
+    scanf("%f", &speed);
+    printf("Enter obstacle distance (-1 if none): ");
+    scanf("%f", &obstacleDist);
+    printf("Is track OK? (1=Yes, 0=Fault): ");
+    scanf("%d", &trackOk);
+    // Decision logic
+    if (!trackOk) {
+        printf("ALERT: Track fault detected! Stop train immediately.\n");
+    }
+    else if (obstacleDist >= 0 && obstacleDist < 50) {
+        printf("ALERT: Obstacle ahead at %.1f meters! Apply brakes.\n", obstacleDist);
+    }
+    else if (speed > 120) {
+        printf("ALERT: Overspeed! Reduce speed immediately.\n");
+    }
+    else {
+        printf("Train running safely.\n");
+    }
+    return 0;
+}
